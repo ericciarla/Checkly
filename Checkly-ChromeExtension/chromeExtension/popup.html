@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="loadingPage">
+            <h2 id="help">Checkly</h2>
+            <div id="loader"></div>
+            <p>Checking website...</p>
+        </div>
+
+        <div id="resultPage">
+            <h2>Checkly</h2>
+            <h3>Fact Score</h3>
+            <p id="demo"></p>
+
+        </div>
+    </body>
+
+    <style>
+        #loadingPage {
+            text-align: center;
+        }
+
+        #loader {
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #c600ff;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+        }
+    
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg);}
+        }
+
+        #resultPage {
+            display: none;
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 10s;
+            animation-name: animatebottom;
+            animation-duration: 10s;
+            display: none;
+            text-align: center;
+        }
+        
+        p {
+            font-size: 20px;
+            margin-top: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+
+        #demo {
+            font-size: 45px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            font-size: 20px;
+        }
+    </style>
+</html>

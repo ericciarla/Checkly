@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "FactChecker",
+    "version": "69.69",
+
+    "permissions": [
+        "http://localhost/hack2020/",
+        "tabs"
+    ],
+
+    "browser_action": {
+      "default_icon": "logo_png.png",
+      "default_popup": "popup.html",
+      "default_title": "FactChecker"
+    }
+  }
